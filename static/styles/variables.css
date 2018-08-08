@@ -1,0 +1,15 @@
+:root {
+    /* Colors */
+    --offWhite: #F0F0F0;
+    --offBlack: #202023;
+    --gray: #818385;
+    --gold: #D78F18;
+
+    /* Spacing */
+    --spaceSmall: 0.5rem;
+    --space: 1rem;
+    --spaceMed: 2rem;
+    --spaceLarge: 3rem;
+    --spaceXLarge: 5rem;
+    --spaceXXLarge: 7rem;
+}

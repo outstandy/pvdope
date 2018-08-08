@@ -1,0 +1,31 @@
+@font-face {
+    font-family: "FS Benjamin";
+    font-style: normal;
+    font-weight: 200;
+    src: url("~/assets/fonts/FSBenjaminWeb-Book.eot") format("eot"),
+         url("~/assets/fonts/FSBenjaminWeb-Book.woff") format("woff");
+}
+
+@font-face {
+    font-family: "FS Benjamin";
+    font-style: italic;
+    font-weight: 200;
+    src: url("~/assets/fonts/FSBenjaminWeb-BookItalic.eot") format("eot"),
+         url("~/assets/fonts/FSBenjaminWeb-BookItalic.woff") format("woff");
+}
+
+@font-face {
+    font-family: "FS Benjamin";
+    font-style: normal;
+    font-weight: 300;
+    src: url("~/assets/fonts/FSBenjaminWeb-Regular.eot") format("eot"),
+         url("~/assets/fonts/FSBenjaminWeb-Regular.woff") format("woff");
+}
+
+@font-face {
+    font-family: "FS Benjamin";
+    font-style: normal;
+    font-weight: 500;
+    src: url("~/assets/fonts/FSBenjaminWeb-SemiBold.eot") format("eot"),
+         url("~/assets/fonts/FSBenjaminWeb-SemiBold.woff") format("woff");
+}
