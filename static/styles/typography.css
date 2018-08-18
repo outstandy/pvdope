@@ -26,10 +26,20 @@ h3 {
     letter-spacing: -1px;
 }
 
+h4 {
+    font-size: 1.5em;
+    font-weight: 300;
+}
+
 p {
     font-size: 1rem;
     font-weight: 200;
     line-height: 1.42rem;
+}
+
+.footnote {
+    font-size: 0.667em;
+    font-weight: 300;
 }
 
 a {
@@ -41,4 +51,7 @@ a {
 
 label {
     font-size: 0.667em;
+    text-transform: uppercase;
+    color: var(--gray);
+    letter-spacing: 1px
 }

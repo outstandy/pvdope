@@ -1,38 +1,42 @@
 <template>
-  <section class="container">
-    <div>
-      <city-lockup />
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          class="button--green">Documentation</a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          class="button--grey">GitHub</a>
-      </div>
+    <div class="city-container">
+      <nuxt-link class="city-link" to="/preview">
+        <city-lockup city="San Francisco" nickname="The Barbary Coast" />
+      </nuxt-link>
+      <p>Choose a city.</p>
+      <nuxt-link class="city-link" to="/preview">
+        <city-lockup city="Providence" nickname="The Renaissance City" />
+      </nuxt-link>
     </div>
-  </section>
 </template>
 
 <script>
 import CityLockup from '~/components/CityLockup.vue'
 
 export default {
+  beforeRouteLeave (to, from, next) {
+    const cities = document.getElementsByClassName("city")
+    Array.from(cities).forEach(city => city.classList.add("lockup-transition-leave-active", "lockup-transition-leave-to"));
+    next()
+  },
   components: {
     CityLockup
   }
 }
 </script>
 
-<style scoped>
-.container {
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
+<style scoped lang="sass">
+.city-container 
+  height: 100vh
+  position: absolute
+  width: 100vw
+  display: flex
+  align-items: center
+  justify-content: space-evenly
+  text-align: center
+
+.city-link
+  text-decoration: none
+
 </style>
 
